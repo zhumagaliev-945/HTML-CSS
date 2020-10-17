@@ -1,0 +1,393 @@
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  margin: 0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+#nav-bar{
+  position: relative;
+  top: 0;
+}
+.navbar-brand{
+  font-size: 30px;
+  padding: 10px;
+}
+.navbar-nav li{
+  padding: 0 10px;
+}
+.navbar-nav li a{
+  float: right;
+  text-align: left;
+  padding-top: 10px ;
+  padding-bottom: 10px ;
+  padding-right: 10px ;
+  padding-left: 10px ;
+  transition: 0.2s;
+}
+#nav-bar ul li a:hover{
+  background-color:orange;
+  color: black;
+}
+.navbar-toggler{
+  border: none !important;
+}
+.nav-link{
+  color: balck;
+  font-size: 16px;
+}
+.form-inline .button{
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  background:orange;
+}
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col{
+  margin-left: 80px;
+}
+#nav-bar .row .col h1{
+  color: white;
+  font-size: 70px;
+}
+#nav-bar .row  .col p{
+  color: white;
+  font-size: 25px;
+  line-height: 15px;
+}
+.btn1{
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  min-width: 200px;
+  margin: 30px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+}
+.btn1:hover{
+  color: orange;
+}
+.btn1::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+} 
+.btn8::before{
+  transform: scaleX(0);
+}
+.btn8:hover::before{
+  transform: scaleX(1);
+} 
+
+.btn-box
+{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  width: 190px;
+  border-color: #ffaf00;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background:#FF9E00;
+}
+.nav-itemd {
+  background: orange;
+  color: black;
+}
+.nav-itemd a{
+  color: black;
+  text-decoration: none;
+}
+.head-image img{
+    margin-top: 80px;
+    margin-left: 100px;
+    width: 180px;
+    height: 20px;
+}
+#first-section{
+    background-color: white;
+}
+#section1 img{
+    margin-top: 50px;
+    width: 330px;
+    height: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#section2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 330px;
+    height: 220px;
+}
+
+.first-div{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+#container{
+    position: relative;
+}
+.nav a{
+    color: black;
+}
+.head h1{
+    text-align: center;
+    color: black;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+.row .bold{
+    text-align: center;
+    font-weight: bold ;
+    font-size: 20px;
+}
+.row p{
+    text-align: center;
+    font-size: 18px;
+}
+.row .tip-button{
+    text-decoration:none;
+    color: black;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    background-color: orange;
+    position: relative;
+    top: 96%;
+    left: 30%;
+}
+#second-section{
+    background-color: #efefef;
+}
+.second-div{
+    margin-left: 80px;
+    margin-right: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  color: #d9d9d9;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background:orange ;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: orange;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: orange;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #fff;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #fff;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .bttn{
+  margin-top: 10px;
+  width: 100%;
+}
+.right form .bttn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: orange;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: rgba(236, 155, 4, 0.719);
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #fff;
+}
+.bottom center a{
+  color: orange;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+.move-up{
+  position: fixed;
+  right: 5%;
+  top: 100%;
+}
+
+.move-up span{
+  color: rgba(255, 166, 0, 0.74);
+}
+
+.move-up span:hover{
+  color:orange;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(
+    45deg,
+    orange,
+    orange
+  );
+  border-radius: 3px;
+
+}
