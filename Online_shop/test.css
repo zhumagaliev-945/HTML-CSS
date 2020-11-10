@@ -1,0 +1,21 @@
+.brand_content{
+    background-color: black;
+    width: 100%;
+    height: 500px;
+
+}
+.container{
+    background-color: black;
+}
+.title{
+    color: white;
+    text-align: center;
+}
+.col{
+    align-content: center;
+}
+.col img{
+    background-color: black;
+    width: 400px;
+    height: 200px;
+}

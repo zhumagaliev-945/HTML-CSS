@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: PostBold;
+    src: url(/gentelman/font_type/PostNoBillsJaffna-Bold.ttf) format('truetype');
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/*CLEARFIX*/
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+@font-face{
+    font-family: 'Century';
+    font-family:'Post-No-Bills-Jaffna-Bold';
+    src: url('../font/Century.ttf');
+    src: url('../font/PostBold.ttf');
+}
+.black_rect{
+    background: #212121;
+    width: 100%;
+    height: 44px;
+}
+.header{
+    background: #0F0F0F;
+    width: 100%;
+    height: 100%;
+}
+.wrapper{
+    width: 1700px;
+    margin: 0 auto;
+}
+header .header_menus li {
+    float: left;
+}
+.gent_logo{
+    margin: 28px 380px 0 200px;
+}
+.menu_logo{
+    margin-top: 25px;
+}
+
+/*ANIMATION*/
+nav{
+    position: relative;
+    margin: 0 auto;
+    width: 480px;
+    height: 80px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    float: left;
+}
+
+nav a{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #969696;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    margin-top: 35px;
+}
+
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: #1F1F1F;
+    transition: all .5s ease;
+}
+a:nth-child(1){
+    width: 150px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+    width: 150px;
+    left: 0;
+}
+a:nth-child(2){
+    width: 200px; 
+}
+nav .start-About, a:nth-child(2):hover~.animation{
+    width: 200px;
+    left: 150px;
+}
+a:nth-child(3){
+    width: 90px;
+}
+nav .start-Blog, a:nth-child(3):hover~.animation{
+    width: 100px;
+    left: 350px;
+}
+.icon li{
+    display: inline-block;
+}
+.icon1{
+    margin: 28px 40px 0px 0px;
+}
+.icon2{
+    margin: 28px 0px 0px 0px;
+}
+
+/*SLIDER*/
+.slider{
+width: 100%;
+height: 788px;    
+overflow: hidden;
+}
+  
+.slides{
+width: 500%;
+height: 500px;
+display: flex;
+}
+  
+.slides input{
+display: none;
+}
+  
+.slide{
+width: 20%;
+transition: 2s;
+}
+  
+.slide img{
+width: 100%;
+height: 810px;
+}
+  
+/*css for manual slide navigation*/
+.navigation-manual{
+position: absolute;
+width: 100%;
+margin-top: 250px;
+display: flex;
+justify-content: center;
+}
+  
+.manual-btn{
+border: 0.001px #969696;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+  
+.manual-btn:not(:last-child){
+margin-right: 26px;
+}
+  
+.manual-btn:hover{
+background: #FFF;
+}
+  
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+  
+#radio2:checked ~ .first{
+margin-left: -20%;
+}
+  
+#radio3:checked ~ .first{
+margin-left: -40%;
+}
+  
+#radio4:checked ~ .first{
+margin-left: -60%;
+}
+/*css for automatic navigation*/
+/* TEXT start */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: white;
+    padding: 30px;
+}
+.centered h1{
+    color:white;
+    font-size: 70px;
+    font-family: PostBold;
+}
+.centered h2{
+    border-top: solid 3px white;
+    padding: 5px;
+    margin-top: -20px;
+    color:white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+/* TEXT end */
+.navigation-auto{
+position: absolute;
+display: flex;
+width: 100%;
+justify-content: center;
+margin-top: 750px;
+}
+.navigation-auto div{
+border: 0.001px #969696;
+background: #969696;
+opacity: 70%;
+padding: 5px;
+border-radius: 10px;
+transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+margin-right: 26px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+background: #FFF;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+background: #FFF;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+background: #FFF;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+background: #FFF;
+}
+                      
+.text{
+    background-image: url('../img/logo.png');
+    height: 100px;
+}
+
+

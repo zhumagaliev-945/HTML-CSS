@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <title>Gentelman</title>
+</head>
+<body>
+    <div class="black_rect"></div>
+    <div class="header">
+        <div class="inner-header">
+            <div class="wrapper">
+                <header>
+                    <ul class="header_menus">
+                        <li class="menu_logo"><a href="#"><img src="img/menu-of-three-lines.png" alt="1"></a></li>
+                        <li class="gent_logo"><a href="index.html"><img src="img/gentelman.png" alt="gentelman"></a></li>
+                    </ul>
+                    <div class="info-block">
+                        <nav>
+                            <a href="#">liked</a>
+                            <a href="#">personal account</a>
+                            <a href="#">help</a>
+                            <div class="animation start-home"></div>
+                        </nav>
+
+                        <ul class="icon">
+                            <li class="icon1"><a href="#"><img src="img/bx_bx-cart.png" alt=""></a></li>
+                            <li class="icon2"><a href="#"><img src="img/Vector1.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+    <section class="bg">
+        
+        <!--image slider start-->
+        <div class="slider">
+            
+            <div class="slides">
+                <!--radio buttons start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio buttons end-->
+                <!--slide images start-->
+                <div class="slide first img-fluid">
+                    <img src="img/bg.jpg">
+                    <div class="centered">
+                        <h1>New In</h1>
+                        <h2>FOR GENTLEMAN</h2>
+                    </div>
+                </div>
+                <div class="slide img-fluid">
+                    <img src="img/2.jpg">
+                </div>
+                <div class="slide img-fluid">
+                    <img src="img/3.jpg">
+                </div>
+                <div class="slide img-fluid">
+                    <img src="img/4.jpg">
+                </div>
+                <!--slide images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            <!--automatic navigation end-->
+            </div>
+            
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+        <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+            counter = 1;
+            }
+        }, 5000);
+        </script>
+    </section>
+</body>
+</html>
